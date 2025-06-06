@@ -1,0 +1,22 @@
+Zuber/
+├── main.cpp                     # Main application entry point
+├── Zuber.h                      # High-level application class Orchestrator class
+├── decorators/                  # Decorators for Fare
+│   ├── FareCalculation.h        # Calculates the Fare
+│   └── FareDecorator.h          # hierarchy base & decorators
+├── models/                      # Core data structures/entities
+│   ├── Rider.h                  # Info about Rider
+│   ├── Driver.h                 # Info about Driver
+├── services/                    # Business services
+│   └── Notification.h           # Handles user/driver notifications
+├── managers/                    # Manages collections of entities
+│   └── driverManager.h          # Singleton for driver management
+|   └── riderManager.h           # Singleton for rider management
+├── strategies/                  # Implementations of various strategies
+│   ├── PaymentStrategy.h        # Base for payment strategies
+│   ├── UpiPaymentStrategy.h     # UPI payment implementation (assumed)
+│   ├── CreditCardPaymentStrategy.h # Credit Card payment implementation
+│   ├── BookRideStrategy.h       # Base for ride booking strategies
+│   └── BookRideByVehicleStrategy.h # Booking strategy by vehicle type
+├── factories/                   # Object creation factories
+│   └── Ride.h                   # Ride base, concrete rides, and RideFactory
